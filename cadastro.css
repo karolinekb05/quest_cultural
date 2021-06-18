@@ -1,0 +1,96 @@
+#elemento {
+    cursor: pointer;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: arial;
+    color: 	#808080;
+    margin-left: 7%;
+}
+
+#subtitulo {
+    font-family: arial;
+    color: #363636;
+    margin-left: 12%;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #FFEBCD;
+    font-family: arial;
+    font-size: 1.2em;
+    color: black;
+    margin-left: 35%;
+    margin-top: 2%;
+    margin-block-end: 1%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;             /*Para arredondar as bordas das caixas*/
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.5em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFFAFA;
+}
+
+.botao {
+    font-size: 1.3em;
+    background: #FFFAFA;
+    border: 0;
+    margin-bottom: 1em;
+    color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover { /*mudar a cor do enviar quando o cursor estiver em cima*/
+    background: #F0FFF0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    margin-inline-end: 1%;
+}
+
+#check {
+    display: inline-block;
+}

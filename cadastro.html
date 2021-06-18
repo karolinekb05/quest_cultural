@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+  <meta chaset="UFT-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="cadastro.css">
+  
+    <title>Questionário cultural</title>
+</head>
+  
+<body>
+  <div>
+    <h1 id="titulo">Questionário cultural</h1>
+    <p id="subtitulo">Complete as informações abaixo</p>
+    <br>
+  </div>
+
+<!--Início do formulário-->
+<forms>
+
+<fieldset class="grupo">
+    <div>
+        <label for="nome"><strong>Nome:</strong></label> <br>
+            <input style="width: 25%" type="text" name="nome" id="nome" required>
+
+    <br>
+    <br>
+
+        <label for="sobrenome"><strong>Sobrenome:</strong></label> <br>
+            <input style="width: 25%" type="text" name="sobrenome" id="sobrenome" required>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <label for="email"><strong>E-mail:</strong></label>
+            <input style="width: 35%" type="email" name="email" id="email" required>
+    </div>
+</fieldset>
+
+    <br>
+    <br>
+
+<!--Listagem-->
+    <div class="campo">
+      <label for="cores"><strong>Informe qual a sua cor preferida:</strong></label> <br>
+        <select id="cores">
+            <option selected disable value="">Selecione</option>
+            <option>Amarelo</option>
+            <option>Azul</option>
+            <option>Branco</option>
+            <option>Laranja</option>
+            <option>Preto</option>
+            <option>Verde</option>
+            <option>Vermelho</option>
+      </select>
+    </div> 
+    
+    <br>
+    <br>
+
+<!--Radio button-->
+    <div class="campo">
+        <label><strong>Informe qual a estação do ano você mais gosta:</strong></label> <br>
+        <label>
+            <input type="radio" name="estano" value="verao" checked>Verão
+        </label> <br>
+        <label>
+            <input type="radio" name="estano" value="outono" checked>Outono
+        </label> <br>
+        <label>
+            <input type="radio" name="estano" value="inverno" checked>Inverno
+        </label> <br>
+        <label>
+            <input type="radio" name="estano" value="primavera" checked>Primavera
+        </label>
+    </div>
+
+    <br>
+    <br>
+
+<!--Checkbox-->
+<fieldset class="grupo">
+    <div id="check">
+        <label><strong>Selecione os 3 gêneros de música você mais ouve:</strong></label> <br>
+            <input type="checkbox" id="gen1" name="gen1" value="Axe">
+        <label for="gen1">Axé</label> <br>
+            <input type="checkbox" id="gen2" name="gen2" value="Blues">
+        <label for="gen2">Blues</label> <br>
+            <input type="checkbox" id="gen3" name="gen3" value="Country">
+        <label for="gen3">Country</label> <br>
+            <input type="checkbox" id="gen4" name="gen4" value="Eletronica">
+        <label for="gen4">Eletrônica</label> <br>
+            <input type="checkbox" id="gen5" name="gen5" value="Forro">
+        <label for="gen5">Forró</label> <br>
+            <input type="checkbox" id="gen6" name="gen6" value="Funk">
+        <label for="gen6">Funk</label> <br>
+            <input type="checkbox" id="gen7" name="gen7" value="Gospel">
+        <label for="gen7">Gospel</label> <br>
+            <input type="checkbox" id="gen8" name="gen8" value="HipHop">
+        <label for="gen8">Hip Hop</label> <br>
+            <input type="checkbox" id="gen9" name="gen9" value="Jazz">
+        <label for="gen9">Jazz</label> <br>
+            <input type="checkbox" id="gen10" name="gen10" value="MPB">
+        <label for="gen10">MPB</label> <br>
+            <input type="checkbox" id="gen11" name="gen11" value="Classica">
+        <label for="gen11">Música clássica</label> <br>
+            <input type="checkbox" id="gen12" name="gen12" value="Pagode">
+        <label for="gen12">Pagode</label> <br>
+            <input type="checkbox" id="gen13" name="gen13" value="Pop">
+        <label for="gen13">Pop</label> <br>
+            <input type="checkbox" id="gen14" name="gen14" value="Rap">
+        <label for="gen14">Rap</label> <br>
+            <input type="checkbox" id="gen15" name="gen15" value="Reggae">
+        <label for="gen15">Reggae</label> <br>
+            <input type="checkbox" id="gen16" name="gen16" value="Rock">
+        <label for="gen16">Rock</label> <br>
+            <input type="checkbox" id="gen17" name="gen17" value="Samba">
+        <label for="gen17">Samba</label> <br>
+            <input type="checkbox" id="gen18" name="gen18" value="Sertanejo">
+        <label for="gen18">Sertanejo</label>
+    </div>
+</fieldset>
+    
+    <br>
+
+    <div class="campo">
+        <br>
+        <label><strong>Escreva abaixo uma frase que te inspira:</strong></label> <br>
+        <textarea rows="6" cols="15" style="width: 30em" id="frase" name="frase" placeholder="Escreva aqui..."></textarea>
+    </div>
+
+    <br>
+
+    <button class="botao" type="submit">Enviar</button>
+
+  </forms>
+</body>
+</html>
